@@ -13,6 +13,7 @@ function displayBooks() {
         bookList.appendChild(listItem);
     });
 }
+
 // Initial display of books
 displayBooks();
 
@@ -57,7 +58,6 @@ function closeAddBookForm() {
     addBookForm.style.display = 'none';
 }
 
-
 // Sample borrower data
 let borrowers = [];
 
@@ -71,6 +71,7 @@ function displayBorrowers() {
         borrowerList.appendChild(listItem);
     });
 }
+
 // initial display of borrowers
 displayBorrowers()
 
