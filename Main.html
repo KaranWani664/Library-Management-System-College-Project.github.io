@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <section>
+        <h2>Book List</h2>
+        <ul id="bookList"></ul>
+        <button onclick="showAddBookForm()">Add New Book</button>
+    </section>
+
+    <section>
+        <h2>Borrower List</h2>
+        <ul id="borrowerList"></ul>
+        <button onclick="showAddBorrowerForm()">Add Borrower</button>
+        <button onclick="showRemoveBorrowerForm()">Remove Borrower</button>
+    </section>
+
+    <section>
+        <h2>|Coming Up in next update|</h2>
+        <ul id="comingupinnextupdate"></ul>
+        <button onclick="Checkout()">Checkout Button</button>
+    </section>
+
+    <div id="addBookForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddBookForm()">&times;</span>
+            <h2>Add New Book</h2>
+            <label for="bookTitle">Title:</label>
+            <input type="text" id="bookTitle" required>
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" required>
+            <button onclick="addBook()">Add Book</button>
+        </div>
+    </div>
+
+    <div id="addBorrowerForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddBorrowerForm()">&times;</span>
+            <h2>Add Borrower</h2>
+            <label for="borrowerName">Name:</label>
+            <input type="text" id="borrowerName" required>
+            <button onclick="addBorrower()">Add Borrower</button>
+        </div>
+    </div>
+
+    <div id="removeBorrowerForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRemoveBorrowerForm()">&times;</span>
+            <h2>Remove Borrower</h2>
+            <label for="removeBorrowerName">Name:</label>
+            <input type="text" id="removeBorrowerName" required>
+            <button onclick="removeBorrower()">Remove Borrower</button>
+        </div>
+    </div>
+
+    <footer>
+        <button>
+        <a href="Exit.html" style="text-decoration: none; color: inherit;">Exit</a>
+       </button>
+
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
